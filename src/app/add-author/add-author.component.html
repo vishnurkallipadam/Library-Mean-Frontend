@@ -1,0 +1,116 @@
+<div id="masthead">  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1>ADD AUTHOR
+            <p class="lead"></p>
+          </h1>
+        </div>
+        <div class="col-md-5">
+          <div class="well well-lg"> 
+            <div class="row">
+              <div class="col-sm-12">
+                
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div><!-- /cont -->
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="top-spacer"> </div>
+        </div>
+      </div> 
+    </div><!-- /cont -->
+    
+  </div>
+  
+  
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-12"> 
+        
+        <div class="panel">
+          <div class="panel-body">
+            
+            
+            
+            <!--/stories-->
+            <div>
+                <form method="POST" (ngSubmit)="addAuthor()" >
+                  
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="first">Name of Author</label>
+                        <input [(ngModel)]="author.name" type="text" class="form-control" placeholder="Name of Author" id="authorname" name="authorname" required>
+                      </div>
+                    </div>
+                  </div>
+              
+              
+                  <div class="row">
+                    <div class="col-3 col-md-12">
+                      <div class="form-group">
+                        <label for="company">Famous Works</label>
+                        <div class="mb-3">
+                          <textarea [(ngModel)]="author.work" class="form-control" id="desc" rows="3"
+                            placeholder="Famous Works of author" name="FamousWorks" required></textarea>
+                        </div>
+                      </div>
+              
+              
+                    </div>
+              
+              
+                    <div class="col-md-6">
+              
+                      <div class="form-group">
+                        <label for="pen name">Pen Name</label>
+                        <input type="text" [(ngModel)]="author.penname" class="form-control" id="penname" required placeholder="Enter pen name" name="penname">
+                      </div>
+                    </div>
+              
+                   
+                   
+              
+                  </div>
+              
+              
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="formFileMultiple" class="form-label">Upload Images</label>
+                      <input class="form-control" [(ngModel)]="author.image" type="text" required id="formFileMultiple" name="imageurl" placeholder="Enter image URL" >
+                    </div>
+                  </div>
+                  <div style="padding-top: 5px;">
+                    <button type="submit" class="btn btn-primary" >Add Author</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                  </div>
+                </form>
+              </div>
+            <!--/stories-->
+            
+            
+            <a href="/" class="btn btn-primary pull-right btnNext">More <i class="glyphicon glyphicon-chevron-right"></i></a>
+          
+            
+          </div>
+        </div>
+                                                                                         
+                                                      
+                                                        
+         </div><!--/col-12-->
+    </div>
+  </div>
+                                                  
+                                                                                  
+  <hr>
+  
+  
+  

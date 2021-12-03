@@ -1,0 +1,127 @@
+<div id="masthead">  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1>UPDATE BOOK
+            <p class="lead"></p>
+          </h1>
+        </div>
+        <div class="col-md-5">
+          <div class="well well-lg"> 
+            <div class="row">
+              <div class="col-sm-12">
+                
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div><!-- /cont -->
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="top-spacer"> </div>
+        </div>
+      </div> 
+    </div><!-- /cont -->
+    
+  </div>
+  
+  
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-12"> 
+        
+        <div class="panel">
+          <div class="panel-body">
+            
+            
+            
+            <!--/stories-->
+            <div>
+                <form method="post" (ngSubmit)="updateBook()">
+              
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="first">Name of Book</label>
+                        <input type="text" [(ngModel)]="book.title" class="form-control" placeholder="Name of Book" id="bname" name="title" required>
+                        <input type="hidden" [(ngModel)]="book.id" class="form-control"  name="id" required>
+          
+                      </div>
+                    </div>
+              
+              
+                    <div class="col-md-6">
+                      <div class="form-group dropdown">
+                        <label for="last">Category</label>
+                        <br>
+                        <select [(ngModel)]="book.genere" class="col-md-8 form-select" id="validationCustom04" required name="category">
+                          <option selected disabled value="" id="category">Choose Category</option>
+                          <option value="action">Action</option>
+                          <option value="comedy" >Comedy</option>
+                          <option value="classic">Classic</option>
+                          <option value="fiction">Fiction</option>
+                          <option value="horror">Horror</option>
+                        </select>
+                        <!-- <div class="invalid-feedback">
+                          Please select a valid Category.
+                        </div> -->
+                      </div>
+                    </div>
+              
+              
+                  </div>
+              
+              
+                  <div class="row">
+              
+              
+                    <div class="col-md-6">
+              
+                      <div class="form-group">
+                        <label for="text">Name of Author</label>
+                        <input type="text" [(ngModel)]="book.author" class="form-control" id="author" required placeholder="Enter name of author" name="author">
+                      </div>
+                    </div>
+              
+                   
+              
+                  </div>
+              
+              
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="formFileMultiple" class="form-label">Upload Images</label>
+                      <input class="form-control" [(ngModel)]="book.image" type="text" required id="formFileMultiple" name="imageurl" placeholder="Enter image URL" >
+                    </div>
+                  </div>
+                  <div style="padding-top: 5px;">
+                    <button type="submit" class="btn btn-primary">Update Book</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                  </div>
+                </form>
+              </div>
+            <!--/stories-->
+            
+            
+            <a href="/" class="btn btn-primary pull-right btnNext">More <i class="glyphicon glyphicon-chevron-right"></i></a>
+          
+            
+          </div>
+        </div>
+                                                                                         
+                                                      
+                                                        
+         </div><!--/col-12-->
+    </div>
+  </div>
+                                                  
+                                                                                  
+  <hr>
+  
+  
+  
