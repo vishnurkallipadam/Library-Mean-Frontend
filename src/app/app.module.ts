@@ -18,7 +18,6 @@ import { ShowAuthorComponent } from './show-author/show-author.component';
 import { UpdateAuthorComponent } from './update-author/update-author.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { LoginComponent } from './login/login.component';
-import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { UserSignupComponent } from './user-signup/user-signup.component';
 import { AuthorService } from './author.service';
 import { AuthService } from './auth.service';
@@ -41,7 +40,6 @@ import { TokenInterceptorService } from './token-interceptor.service';
     UpdateAuthorComponent,
     UserLoginComponent,
     LoginComponent,
-    AdminLoginComponent,
     UserSignupComponent
   ],
   imports: [

@@ -13,6 +13,12 @@ export class AuthService {
     return this.http.post("http://localhost:5000/login",user)
   }
 
+  signupUser(user:any){
+    console.log(user);
+    
+    return this.http.post("http://localhost:5000/signup",user)
+  }
+
   userLoggedIn()
   {
     return !!localStorage.getItem('usertoken')

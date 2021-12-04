@@ -1,1 +1,39 @@
-<p>user-signup works!</p>
+<div class="row">
+    <div class="col">
+  
+  <div class="container1">
+    <div class="header1">
+        <h2>Create Account</h2>
+    </div>
+    <form (submit)="userSignUp()"   #usersignup="ngForm" >
+        <div class="form-control1 ">
+            <label for="username">Username</label>
+            <input type="text" name="username" #username="ngModel" [(ngModel)]="user.username" [class.is-invalid]='!(username.dirty && username.valid)' id="uname" pattern='^([A-Za-z]+)?$'  placeholder="Username" required="" />
+  					<div id="unameHelp" [hidden]='username.valid || username.untouched' class="alert alert-danger">Enter valid username</div>
+        </div>
+        <div class="form-control1 ">
+            <label for="username">Email</label>
+            <input type="email" name="email"  #email="ngModel" [(ngModel)]="user.email" [class.is-invalid]='!(email.valid && email.dirty)' pattern="^[a-z0-9.%+]+@[a-z0-9.-]+\.[a-z]{2,4}$"  id="email" placeholder="Email" required/>        </div>
+        	<div id="emailHelp"  [hidden]="email.valid || email.untouched"
+					class="alert alert-danger">Enter valid email</div>
+            <div class="form-control1">
+            <label for="">Password</label>
+            <input type="password" #password="ngModel" name="password" [(ngModel)]="user.password"  id="passwd" placeholder="Password" required>
+           </div>
+        <div class="form-control1">
+            <label for="phone">Phone Number</label>
+            <input [(ngModel)]="user.phoneno" name="phoneno" required type="text" placeholder="Phone Number" id="phone">
+          
+        </div>
+        <button class="btn btn-primary" type="submit" [disabled]="usersignup.form.invalid">submit</button>
+
+    </form>
+  
+  </div> 
+  </div>
+  </div>
+  
+  
+    <!--form end  -->
+   
+  

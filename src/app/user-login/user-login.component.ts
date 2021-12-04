@@ -25,10 +25,10 @@ export class UserLoginComponent implements OnInit {
       (res:any)=>{
         if(res.role=="admin"){
           localStorage.setItem('admintoken', res.token)
-          this.router.navigate(['/']);
+          this.router.navigate(['/books']);
         }else{
           localStorage.setItem('usertoken', res.token)
-          this.router.navigate(['/']);
+          this.router.navigate(['/books']);
         }
         
      

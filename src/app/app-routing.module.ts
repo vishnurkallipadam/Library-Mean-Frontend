@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddAuthorComponent } from './add-author/add-author.component';
 import { AddBookComponent } from './add-book/add-book.component';
-import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AuthorListComponent } from './author-list/author-list.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { LoginComponent } from './login/login.component';
@@ -19,7 +18,7 @@ import { UserguardGuard } from './userguard.guard';
 const routes: Routes = [
   {
     path:"",
-    redirectTo:'/books',
+    redirectTo:'/login/user-login',
     pathMatch:'full'
   },
   {
@@ -69,10 +68,6 @@ const routes: Routes = [
       {
         path:"user-login",
         component:UserLoginComponent
-      },
-      {
-        path:"admin-login",
-        component:AdminLoginComponent
       },
       {
         path:"user-signup",

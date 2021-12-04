@@ -24,7 +24,7 @@
             <a routerLink="addauthor" *ngIf="auth.adminLoggedIn()" >Add Author</a>
           </li>
           <li>
-            <a routerLink="/login/user-login" *ngIf="!auth.userLoggedIn()||!auth.adminLoggedIn()">Login</a>
+            <a routerLink="/login/user-login" *ngIf="!auth.userLoggedIn()&&!auth.adminLoggedIn()">Login</a>
           </li>
           <li>
             <a  (click)="logoutUser()" *ngIf="auth.userLoggedIn()||auth.adminLoggedIn()" >Logout</a>

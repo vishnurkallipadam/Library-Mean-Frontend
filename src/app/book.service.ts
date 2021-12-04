@@ -7,8 +7,11 @@ import {HttpClient ,HttpResponse} from '@angular/common/http'
 export class BookService {
 
   constructor(private http:HttpClient) { }
+
+  service_address:string='api'
+
   getBooks(){
-    return this.http.get('http://localhost:5000/books')
+    return this.http.get<any>('http://localhost:5000/books') 
   }
   getBook(id:any){
     return this.http.get('http://localhost:5000/book/'+id)

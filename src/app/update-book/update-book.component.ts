@@ -30,7 +30,6 @@ export class UpdateBookComponent implements OnInit {
   }
   updateBook(){
     console.log(this.book);
-    
     this.bookservice.updateBook(this.book)
     this.router.navigate(['/'])
   }
